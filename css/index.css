@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+header {
+    background-color: #ffffff;
+  
+    color: rgb(0, 0, 0);
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-title {
+    flex: 4; /* Asigna una proporción mayor al título para que ocupe más espacio */
+    text-align: center; /* Asegura que el título esté centrado */
+}
+
+.header-title h1 {
+    font-size: 2em; /* Ajusta el tamaño del texto del título */
+    margin: 0; /* Elimina cualquier margen por defecto */
+    padding: 0; /* Elimina cualquier padding por defecto */
+    color: rgb(18, 157, 217);
+}
+.logo img {
+    height: 100px; /* Adjust as needed */
+}
+
+.home-icon a {
+    font-size: 30px; /* Aumenta el tamaño del icono */
+    color: black; /* Cambia el color del icono a negro */
+    text-decoration: none; /* Esto elimina el subrayado del enlace */
+    margin-right: 30px; /* Añade margen a la derecha para separar el icono del borde */
+}
+
+.home-icon i {
+    transition: color 0.3s; /* Suaviza la transición del color al pasar el mouse */
+}
+
+.home-icon a:hover i {
+    color: #555; /* Color cuando se pasa el mouse sobre el icono, ajusta según sea necesario */
+}
+.language-selector button,
+.search-bar button {
+    background-color: #00b2e9;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.search-bar input {
+    background-color: #00b2e9;
+    padding: 5px;
+}
+
+.main-nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.main-nav ul li {
+    padding: 0 20px;
+}
+
+.main-nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto; /* Added top margin to push content down */
+   
+    background-color: #00b2e9;
+    gap: 20px; /* Creates space between columns */
+}
+
+
+.sidebar {
+   
+    width: 50%;
+    height: 50%;
+}
+.sidebar a {
+    display: block; /* Make buttons stack vertically */
+    width: 80%; /* Adjust width as needed */
+    padding: 15px; /* Increased padding for larger buttons */
+    margin: 50px auto; /* Center buttons and add space between them */
+    background-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 1px solid #ddd; /* Add border for definition */
+    color: black;
+    text-decoration: none; /* Esto quitará el subrayado de todos los enlaces */
+}
+
+.content-area {
+    width: 60%;
+}
+
+.content-area img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilos para la sección de noticias */
+.news-container {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+}
+
+.news-container h2 {
+    width: 100%;
+    color: #000000;
+}
+
+/* Ajustes para mostrar 4 elementos de noticias por línea */
+.news-item {
+    flex: 0 2 21%;
+    align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
+    margin-bottom: 0; /* Elimina el margen inferior de los elementos de noticias */
+    margin-top: auto;
+    
+}
+
+.news-item img {
+    width: 60%;
+    height: auto;
+}
+
+.news-item h4 {
+    color: #333;
+    font-size: 11px;
+}
+
+
+.site-footer {
+    background-color: #007bff; /* El color azul del fondo */
+    padding: 10px 0; /* Relleno superior e inferior */
+    text-align: center; /* Centra los iconos/links */
+    margin-top: 0; /* Elimina el margen superior del footer */
+}
+
+.footer-content {
+    /* Añade aquí cualquier estilo adicional que necesites para el contenido del footer */
+}
+
+.social-icon {
+    margin: 0 10px; /* Espacio horizontal entre iconos */
+    color: #00a6e5; /* Color del icono */
+    background-color: black; /* Fondo del círculo */
+    border-radius: 50%; /* Hace que el fondo sea circular */
+    width: 40px; /* Tamaño del círculo */
+    height: 40px; /* Altura del círculo */
+    display: inline-flex; /* Permite que el contenido del enlace se centre */
+    align-items: center; /* Centra el icono verticalmente */
+    justify-content: center; /* Centra el icono horizontalmente */
+    text-decoration: none; /* Remueve el subrayado del enlace */
+    font-size: 20px; /* Tamaño del icono */
+}
+
+/* Estilo para el hover sobre los iconos */
+.social-icon:hover {
+    background-color: #555; /* Cambia el color de fondo al pasar el mouse */
+    transition: background-color 0.3s; /* Suaviza la transición del color de fondo */
+}
+
+.data-figures-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribuye las tarjetas uniformemente */
+    background-color: #00b8e2; /* Color de fondo para el encabezado */
+}
+
+.section-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Alinea el título y el enlace "MÁS" en lados opuestos */
+    align-items: center; /* Centra los elementos verticalmente */
+    padding: 20px; /* Espacio alrededor del encabezado de la sección */
+    background-color: #00b8e2; /* Color de fondo para el encabezado */
+    color: white; /* Color del texto para el encabezado */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+}
+
+.more-link {
+    text-decoration: none;
+    color: white; /* Color del texto para el enlace */
+    font-weight: bold; /* Fuente en negrita para el enlace */
+}
+
+.figure-card {
+    width: calc(25% - 10px); /* Ajusta el ancho para 4 tarjetas por fila */
+    margin-bottom: 20px; /* Espacio debajo de cada tarjeta */
+    background-color: white; /* Fondo blanco para las tarjetas */
+    text-align: center; /* Centra el texto */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+}
+
+.figure-card img {
+    width: 100%; /* Asegura que la imagen llene el ancho de la tarjeta */
+    height: 260px; /* Mantiene la relación de aspecto de la imagen */
+}
+
+.figure-card p {
+    color: #666; /* Color del texto para la fecha */
+}
+
+.figure-card h3 {
+    color: #333; /* Color del texto para el título */
+    margin: 10px 0; /* Espacio alrededor del título */
+}
+.regional {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.regional-offices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Distribuye los elementos uniformemente y los centra */
+}
+
+.office {
+    flex-basis: calc(33.333% - 40px); /* Tres elementos por fila, ajustando por el gap */
+    text-align: center; /* Centra el texto debajo de la imagen */
+    margin-bottom: 40px; /* Espacio debajo de cada tarjeta */
+    background-color: #00a6e5;
+}
+.office p {
+    color: #231f20; /* Texto blanco para el subtítulo */
+    padding: 5px 0; /* Relleno para el subtítulo */
+    margin-top: -5px; /* Ajusta para solapar la imagen y el subtítulo */
+    border-radius: 0 0 10px 10px; /* Bordes redondeados solo en la parte inferior */
+}
